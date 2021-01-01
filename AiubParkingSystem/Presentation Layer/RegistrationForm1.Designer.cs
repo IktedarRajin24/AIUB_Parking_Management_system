@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             this.RegigroupBox1 = new System.Windows.Forms.GroupBox();
-            this.UsernameLebel = new System.Windows.Forms.Label();
-            this.UsernametextBox1 = new System.Windows.Forms.TextBox();
-            this.PasswordtextBox2 = new System.Windows.Forms.TextBox();
-            this.Passwordlabel1 = new System.Windows.Forms.Label();
-            this.PhonetextBox1 = new System.Windows.Forms.TextBox();
-            this.PhoneNolabel1 = new System.Windows.Forms.Label();
+            this.Submitbutton1 = new System.Windows.Forms.Button();
+            this.VahicletypecomboBox1 = new System.Windows.Forms.ComboBox();
+            this.VahicleTypelabel1 = new System.Windows.Forms.Label();
+            this.UserTypecomboBox1 = new System.Windows.Forms.ComboBox();
+            this.Usertypelabel1 = new System.Windows.Forms.Label();
             this.AddresstextBox1 = new System.Windows.Forms.TextBox();
             this.Addresslabel1 = new System.Windows.Forms.Label();
-            this.Usertypelabel1 = new System.Windows.Forms.Label();
-            this.UserTypecomboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.VahicleTypelabel1 = new System.Windows.Forms.Label();
-            this.Submitbutton1 = new System.Windows.Forms.Button();
+            this.PhonetextBox1 = new System.Windows.Forms.TextBox();
+            this.PhoneNolabel1 = new System.Windows.Forms.Label();
+            this.PasswordtextBox2 = new System.Windows.Forms.TextBox();
+            this.Passwordlabel1 = new System.Windows.Forms.Label();
+            this.UsernametextBox1 = new System.Windows.Forms.TextBox();
+            this.UsernameLebel = new System.Windows.Forms.Label();
             this.RegigroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // RegigroupBox1
             // 
             this.RegigroupBox1.Controls.Add(this.Submitbutton1);
-            this.RegigroupBox1.Controls.Add(this.comboBox1);
+            this.RegigroupBox1.Controls.Add(this.VahicletypecomboBox1);
             this.RegigroupBox1.Controls.Add(this.VahicleTypelabel1);
             this.RegigroupBox1.Controls.Add(this.UserTypecomboBox1);
             this.RegigroupBox1.Controls.Add(this.Usertypelabel1);
@@ -68,56 +68,59 @@
             this.RegigroupBox1.Text = "Registration";
             this.RegigroupBox1.Enter += new System.EventHandler(this.RegigroupBox1_Enter);
             // 
-            // UsernameLebel
+            // Submitbutton1
             // 
-            this.UsernameLebel.AutoSize = true;
-            this.UsernameLebel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameLebel.Location = new System.Drawing.Point(50, 71);
-            this.UsernameLebel.Name = "UsernameLebel";
-            this.UsernameLebel.Size = new System.Drawing.Size(94, 20);
-            this.UsernameLebel.TabIndex = 0;
-            this.UsernameLebel.Text = "Username";
+            this.Submitbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submitbutton1.Location = new System.Drawing.Point(207, 377);
+            this.Submitbutton1.Name = "Submitbutton1";
+            this.Submitbutton1.Size = new System.Drawing.Size(119, 37);
+            this.Submitbutton1.TabIndex = 12;
+            this.Submitbutton1.Text = "Submit";
+            this.Submitbutton1.UseVisualStyleBackColor = true;
+            this.Submitbutton1.Click += new System.EventHandler(this.Submitbutton1_Click);
             // 
-            // UsernametextBox1
+            // VahicletypecomboBox1
             // 
-            this.UsernametextBox1.Location = new System.Drawing.Point(167, 71);
-            this.UsernametextBox1.Name = "UsernametextBox1";
-            this.UsernametextBox1.Size = new System.Drawing.Size(159, 22);
-            this.UsernametextBox1.TabIndex = 1;
+            this.VahicletypecomboBox1.FormattingEnabled = true;
+            this.VahicletypecomboBox1.Items.AddRange(new object[] {
+            "Student",
+            "Faculty"});
+            this.VahicletypecomboBox1.Location = new System.Drawing.Point(167, 322);
+            this.VahicletypecomboBox1.Name = "VahicletypecomboBox1";
+            this.VahicletypecomboBox1.Size = new System.Drawing.Size(159, 24);
+            this.VahicletypecomboBox1.TabIndex = 11;
             // 
-            // PasswordtextBox2
+            // VahicleTypelabel1
             // 
-            this.PasswordtextBox2.Location = new System.Drawing.Point(167, 120);
-            this.PasswordtextBox2.Name = "PasswordtextBox2";
-            this.PasswordtextBox2.Size = new System.Drawing.Size(159, 22);
-            this.PasswordtextBox2.TabIndex = 3;
+            this.VahicleTypelabel1.AutoSize = true;
+            this.VahicleTypelabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.VahicleTypelabel1.Location = new System.Drawing.Point(28, 322);
+            this.VahicleTypelabel1.Name = "VahicleTypelabel1";
+            this.VahicleTypelabel1.Size = new System.Drawing.Size(117, 20);
+            this.VahicleTypelabel1.TabIndex = 10;
+            this.VahicleTypelabel1.Text = "Vahicle Type";
             // 
-            // Passwordlabel1
+            // UserTypecomboBox1
             // 
-            this.Passwordlabel1.AutoSize = true;
-            this.Passwordlabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Passwordlabel1.Location = new System.Drawing.Point(50, 120);
-            this.Passwordlabel1.Name = "Passwordlabel1";
-            this.Passwordlabel1.Size = new System.Drawing.Size(91, 20);
-            this.Passwordlabel1.TabIndex = 2;
-            this.Passwordlabel1.Text = "Password";
+            this.UserTypecomboBox1.FormattingEnabled = true;
+            this.UserTypecomboBox1.Items.AddRange(new object[] {
+            "Student",
+            "Faculty"});
+            this.UserTypecomboBox1.Location = new System.Drawing.Point(167, 270);
+            this.UserTypecomboBox1.Name = "UserTypecomboBox1";
+            this.UserTypecomboBox1.Size = new System.Drawing.Size(159, 24);
+            this.UserTypecomboBox1.TabIndex = 9;
+            this.UserTypecomboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // PhonetextBox1
+            // Usertypelabel1
             // 
-            this.PhonetextBox1.Location = new System.Drawing.Point(167, 171);
-            this.PhonetextBox1.Name = "PhonetextBox1";
-            this.PhonetextBox1.Size = new System.Drawing.Size(159, 22);
-            this.PhonetextBox1.TabIndex = 5;
-            // 
-            // PhoneNolabel1
-            // 
-            this.PhoneNolabel1.AutoSize = true;
-            this.PhoneNolabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNolabel1.Location = new System.Drawing.Point(50, 171);
-            this.PhoneNolabel1.Name = "PhoneNolabel1";
-            this.PhoneNolabel1.Size = new System.Drawing.Size(90, 20);
-            this.PhoneNolabel1.TabIndex = 4;
-            this.PhoneNolabel1.Text = "Phone No";
+            this.Usertypelabel1.AutoSize = true;
+            this.Usertypelabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usertypelabel1.Location = new System.Drawing.Point(50, 270);
+            this.Usertypelabel1.Name = "Usertypelabel1";
+            this.Usertypelabel1.Size = new System.Drawing.Size(95, 20);
+            this.Usertypelabel1.TabIndex = 8;
+            this.Usertypelabel1.Text = "User Type";
             // 
             // AddresstextBox1
             // 
@@ -136,58 +139,56 @@
             this.Addresslabel1.TabIndex = 6;
             this.Addresslabel1.Text = "Address";
             // 
-            // Usertypelabel1
+            // PhonetextBox1
             // 
-            this.Usertypelabel1.AutoSize = true;
-            this.Usertypelabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Usertypelabel1.Location = new System.Drawing.Point(50, 270);
-            this.Usertypelabel1.Name = "Usertypelabel1";
-            this.Usertypelabel1.Size = new System.Drawing.Size(95, 20);
-            this.Usertypelabel1.TabIndex = 8;
-            this.Usertypelabel1.Text = "User Type";
+            this.PhonetextBox1.Location = new System.Drawing.Point(167, 171);
+            this.PhonetextBox1.Name = "PhonetextBox1";
+            this.PhonetextBox1.Size = new System.Drawing.Size(159, 22);
+            this.PhonetextBox1.TabIndex = 5;
             // 
-            // UserTypecomboBox1
+            // PhoneNolabel1
             // 
-            this.UserTypecomboBox1.FormattingEnabled = true;
-            this.UserTypecomboBox1.Items.AddRange(new object[] {
-            "Student",
-            "Faculty"});
-            this.UserTypecomboBox1.Location = new System.Drawing.Point(167, 270);
-            this.UserTypecomboBox1.Name = "UserTypecomboBox1";
-            this.UserTypecomboBox1.Size = new System.Drawing.Size(159, 24);
-            this.UserTypecomboBox1.TabIndex = 9;
-            this.UserTypecomboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.PhoneNolabel1.AutoSize = true;
+            this.PhoneNolabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneNolabel1.Location = new System.Drawing.Point(50, 171);
+            this.PhoneNolabel1.Name = "PhoneNolabel1";
+            this.PhoneNolabel1.Size = new System.Drawing.Size(90, 20);
+            this.PhoneNolabel1.TabIndex = 4;
+            this.PhoneNolabel1.Text = "Phone No";
             // 
-            // comboBox1
+            // PasswordtextBox2
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Student",
-            "Faculty"});
-            this.comboBox1.Location = new System.Drawing.Point(167, 322);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(159, 24);
-            this.comboBox1.TabIndex = 11;
+            this.PasswordtextBox2.Location = new System.Drawing.Point(167, 120);
+            this.PasswordtextBox2.Name = "PasswordtextBox2";
+            this.PasswordtextBox2.Size = new System.Drawing.Size(159, 22);
+            this.PasswordtextBox2.TabIndex = 3;
             // 
-            // VahicleTypelabel1
+            // Passwordlabel1
             // 
-            this.VahicleTypelabel1.AutoSize = true;
-            this.VahicleTypelabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.VahicleTypelabel1.Location = new System.Drawing.Point(28, 322);
-            this.VahicleTypelabel1.Name = "VahicleTypelabel1";
-            this.VahicleTypelabel1.Size = new System.Drawing.Size(117, 20);
-            this.VahicleTypelabel1.TabIndex = 10;
-            this.VahicleTypelabel1.Text = "Vahicle Type";
+            this.Passwordlabel1.AutoSize = true;
+            this.Passwordlabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Passwordlabel1.Location = new System.Drawing.Point(50, 120);
+            this.Passwordlabel1.Name = "Passwordlabel1";
+            this.Passwordlabel1.Size = new System.Drawing.Size(91, 20);
+            this.Passwordlabel1.TabIndex = 2;
+            this.Passwordlabel1.Text = "Password";
             // 
-            // Submitbutton1
+            // UsernametextBox1
             // 
-            this.Submitbutton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Submitbutton1.Location = new System.Drawing.Point(207, 377);
-            this.Submitbutton1.Name = "Submitbutton1";
-            this.Submitbutton1.Size = new System.Drawing.Size(119, 37);
-            this.Submitbutton1.TabIndex = 12;
-            this.Submitbutton1.Text = "Submit";
-            this.Submitbutton1.UseVisualStyleBackColor = true;
+            this.UsernametextBox1.Location = new System.Drawing.Point(167, 71);
+            this.UsernametextBox1.Name = "UsernametextBox1";
+            this.UsernametextBox1.Size = new System.Drawing.Size(159, 22);
+            this.UsernametextBox1.TabIndex = 1;
+            // 
+            // UsernameLebel
+            // 
+            this.UsernameLebel.AutoSize = true;
+            this.UsernameLebel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameLebel.Location = new System.Drawing.Point(50, 71);
+            this.UsernameLebel.Name = "UsernameLebel";
+            this.UsernameLebel.Size = new System.Drawing.Size(94, 20);
+            this.UsernameLebel.TabIndex = 0;
+            this.UsernameLebel.Text = "Username";
             // 
             // RegistrationForm1
             // 
@@ -217,7 +218,7 @@
         private System.Windows.Forms.ComboBox UserTypecomboBox1;
         private System.Windows.Forms.Label Usertypelabel1;
         private System.Windows.Forms.Button Submitbutton1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox VahicletypecomboBox1;
         private System.Windows.Forms.Label VahicleTypelabel1;
     }
 }
